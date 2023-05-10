@@ -6,10 +6,7 @@ import java.awt.*;
 public class MainFrame {
 
     public static void main(String[] args) {
-
-        System.out.println("Moin moin");
-
-
+        
         // kann gerne noch geändert werden
 
         JFrame frame = new JFrame("Passwort Generator");
@@ -18,6 +15,9 @@ public class MainFrame {
         JPanel panel = new JPanel();
         panel.setBackground(Color.blue.darker().darker().darker().darker().darker());
 
+        JLabel welcomeLabel = new JLabel("Welcome");
+
+        panel.add(welcomeLabel);
         frame.add(panel);
         frame.setVisible(true);
     }
